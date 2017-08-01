@@ -1,0 +1,41 @@
+{
+	"manifest_version": 2,
+
+	"name": "Media Keys",
+	"description": "Use media keys to control YouTube (more soon)",
+    "version": "1.0",
+    "permissions": [
+        "tabs",
+        "*://www.youtube.com/*"
+    ],
+
+    "background": {
+		"scripts": [
+            "commands.js"
+        ]
+	},
+
+    "commands": {
+        "media_playpause": {
+            "description": "Play/Pause",
+            "global": true,
+            "suggested_key": {
+                "default": "MediaPlayPause"
+            }
+        },
+        "media_next": {
+            "description": "Next",
+            "global": true,
+            "suggested_key": {
+                "default": "MediaNextTrack"
+            }
+        },
+        "media_prev": {
+            "description": "Prev",
+            "global": true,
+            "suggested_key": {
+                "default": "MediaPrevTrack"
+            }
+        }
+    }
+}
